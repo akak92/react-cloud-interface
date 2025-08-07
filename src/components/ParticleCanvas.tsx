@@ -29,7 +29,6 @@ export default function ParticleCanvas() {
       pointsRef.current.forEach((point) => {
         point.x += point.dx;
         point.y += point.dy;
-
         bounceWithinCircle(point, centerX, centerY, radius);
 
         const hue = (point.colorShift + time * 0.05) % 360;
@@ -45,5 +44,5 @@ export default function ParticleCanvas() {
     requestAnimationFrame(drawFrame);
   }, []);
 
-  return <canvas ref={canvasRef} className="canvas" />;
+  return <canvas ref={canvasRef} className="canvas fade-in" />;
 }

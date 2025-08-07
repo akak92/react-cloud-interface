@@ -10,12 +10,41 @@ body, html, #root {
   display: block;
   width: 100vw;
   height: 100vh;
+  opacity: 0;
 }
 
+/* ANIMACIÓN FADE-IN CANVAS */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+/* TEXTO */
 .typing-text {
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-size: 1.2rem;
   text-align: center;
   margin-top: 2rem;
+  white-space: pre-wrap;
+}
+
+/* CURSOR */
+.caret-inline {
+  display: inline-block;
+  width: 0.65ch;
+  height: 1.2em;
+  background-color: white;
+  vertical-align: bottom;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.4;
+  }
 }

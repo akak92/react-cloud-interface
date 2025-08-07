@@ -34,8 +34,8 @@ export function bounceWithinCircle(
   if (distance > radius) {
     const nx = dx / distance;
     const ny = dy / distance;
-
     const dot = point.dx * nx + point.dy * ny;
+
     point.dx -= 2 * dot * nx;
     point.dy -= 2 * dot * ny;
 
