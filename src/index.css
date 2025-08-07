@@ -48,3 +48,28 @@ body, html, #root {
     opacity: 0.4;
   }
 }
+
+/* BOTÓN */
+.speak-button {
+  margin-top: 2rem;
+  padding: 0.6rem 1.4rem;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.speak-button:hover {
+  background: white;
+  color: black;
+}
+
+/* FADE-IN BOTÓN */
+.fade-in-button {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
