@@ -11,3 +11,11 @@ body, html, #root {
   width: 100vw;
   height: 100vh;
 }
+
+.typing-text {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
